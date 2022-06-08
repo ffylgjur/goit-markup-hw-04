@@ -453,7 +453,7 @@ margin-top: -94px;
 }
 
 .card {
-    border: 1px solid var(--eighth-color);
+    border-bottom-style: 1px solid var(--eighth-color);
 
 }
 
