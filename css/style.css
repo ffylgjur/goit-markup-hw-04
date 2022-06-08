@@ -137,6 +137,7 @@ img {
 .link {
     text-decoration: none;
 }
+
 .navigation-link:hover,
 .navigation-link:focus,
 .contact-item:hover,
@@ -188,10 +189,9 @@ img {
     position: relative;
 
 }
-
-.section .hero {
-    margin-top: -94px;
-    margin-bottom: -94px;
+.hero {
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .modal-btn:focus,
@@ -231,10 +231,6 @@ img {
 
 /*===ABOUT==*/
 
-/*.content.container {
-    display:inline-block;
-    justify-content: space-between;
-*/
 
 .content-list,
 .about-list,
@@ -269,7 +265,6 @@ img {
 }
 
 
-
 .container .about {
     display: flex;
     justify-content: center;
@@ -283,6 +278,14 @@ img {
 
 }
 
+.team-board {
+    background: var(--seventh-color)
+}
+
+.about-board {
+    padding-top: 0px;
+}
+
 .about,
 .team {
     font-weight: 700;
@@ -292,9 +295,6 @@ img {
     padding-bottom: 50px;
 }
 
-.section .special-about{
-    margin-top: -94px;
-}
 
 .name-member {
     font-weight: 500;
@@ -322,10 +322,6 @@ img {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--third-color);
-}
-
-.team {
-    background: var(--seventh-color)
 }
 
 
@@ -395,14 +391,17 @@ img {
 
 
 /*===PORTFOLIO*===*/
+
 .header {
-    border: 1px solid #ECECEC;
+    border: 1px solid var(--ninght-color);
 }
-.section .filter {
-   margin-bottom: -94px;
+
+.filter {
+    padding-bottom: 50px;
 }
-.section .table {
-margin-top: -94px;
+
+.table {
+    padding-top: 0px;
 }
 
 
@@ -444,23 +443,29 @@ margin-top: -94px;
 .table-list-flex {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     list-style: none;
-
 }
 
 .card:not(:nth-child(3n)) {
-    margin-right: auto
+    margin-right: 30px;
 }
 
 .card {
-    border-bottom-style: 1px solid var(--eighth-color);
+    display: block;
+
+}
+
+.card-description {
+    padding: 20px 24px;
+    border: 1px solid var(--eighth-color);
+    border-top: none;
 
 }
 
 
 .table-item {
-
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .table-title {
@@ -468,8 +473,7 @@ margin-top: -94px;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin-top: 20px;
-    padding: 4px 20px 0px 24px;
+    padding-bottom: 4px;
 }
 
 .table-description {
@@ -478,7 +482,7 @@ margin-top: -94px;
     line-height: 1.875;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
-    padding: 4px 24px 20px 24px;
+
 
 
 }
