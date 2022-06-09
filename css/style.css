@@ -464,7 +464,7 @@ img {
 }
 
 
-.table-item {
+.card:nth-child(-n+6) {
     margin-bottom: 30px;
 }
 
