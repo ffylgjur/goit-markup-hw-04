@@ -15,6 +15,8 @@
 body {
     font-family: var(--main-font);
     background-color: var(--third-color);
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 
@@ -63,6 +65,7 @@ img {
     /* width: 1600px; */
     height: 80px;
 
+
 }
 
 .header .container {
@@ -72,6 +75,7 @@ img {
     margin-right: auto;
     height: 100%;
     padding-right: 27px;
+    border-bottom: 1px solid var(--ninght-color)
 }
 
 .logo {
@@ -183,15 +187,19 @@ img {
 }
 
 .hero {
+    display: block;
+    margin: 0 auto;
     background-color: var(--sixth-color);
-    /* width: 1600px; */
     height: 600px;
-    position: relative;
-
-}
-.hero {
     padding-top: 0px;
     padding-bottom: 0px;
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+     url("../images/lmg.jpg");
+    /* background-repeat: no-repeat;
+    background-position: 50%; */
+
 }
 
 .modal-btn:focus,
@@ -218,7 +226,7 @@ img {
 
 
     /* 
-    position: absolute; 
+    position: absolut+e; 
     top: 50%;
     left: 50%;
     transform: translate(-50%);
@@ -392,9 +400,6 @@ img {
 
 /*===PORTFOLIO*===*/
 
-.header {
-    border: 1px solid var(--ninght-color);
-}
 
 .filter {
     padding-bottom: 50px;
