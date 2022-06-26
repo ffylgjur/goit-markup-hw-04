@@ -59,6 +59,7 @@ img {
     padding: 94px 0;
 }
 
+.ico
 
 /*===HEADER===*/
 .header {
@@ -122,18 +123,31 @@ img {
 .navigation-item:not(:last-child) {
     padding-right: 46px;
 }
-
+.contact{
+ display: flex;
+ align-items: flex-end;
+ list-style: none;
+}
 .contact-item {
+
+}
+.contact-item-link {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.142;
     color: var(--secondary-color);
     text-decoration: none;
+    fill: var(--secondary-color);
 }
 
 .contact-item:not(:last-child) {
     padding-right: 50px;
+}
+
+.contact-icon {
+    margin-right: 10px;
+    /* fill: var(--fifth-color); */
 }
 
 
@@ -144,9 +158,11 @@ img {
 
 .navigation-link:hover,
 .navigation-link:focus,
-.contact-item:hover,
-.contact-item:focus {
-    color: var(--fourth-color)
+.contact-item-link:hover,
+.contact-item-link:focus
+ {
+    color: var(--fourth-color);
+    fill: var(--fourth-color);
 }
 
 /*===END HEADER===*/
