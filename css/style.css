@@ -10,6 +10,7 @@
     --seventh-color: #F5F4FA;
     --eighth-color: #EEEEEE;
     --ninght-color: #ECECEC;
+    --icon-color: #AFB1B8;
 }
 
 body {
@@ -59,7 +60,7 @@ img {
     padding: 94px 0;
 }
 
-.ico
+
 
 /*===HEADER===*/
 .header {
@@ -138,7 +139,6 @@ img {
     line-height: 1.142;
     color: var(--secondary-color);
     text-decoration: none;
-    fill: var(--secondary-color);
 }
 
 .contact-item:not(:last-child) {
@@ -147,7 +147,7 @@ img {
 
 .contact-icon {
     margin-right: 10px;
-    /* fill: var(--fifth-color); */
+
 }
 
 
@@ -266,6 +266,28 @@ img {
     padding: 0px;
 }
 
+.content-item {
+
+
+}
+.content-item-icon {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    padding: 25px 0;
+    background-color:var(--seventh-color);
+}
+.content-list-svg {
+    width: 70px;
+    height: 70px;
+
+}
+
 .item-title {
     font-weight: 700;
     font-size: 14px;
@@ -311,7 +333,8 @@ img {
 }
 
 .about,
-.team {
+.team,
+.clients {
     font-weight: 700;
     Font-size: 36px;
     line-height: 1.166;
@@ -337,15 +360,90 @@ img {
     color: var(--secondary-color);
     text-align: center;
     padding-top: 10px;
+    margin-bottom: 16px;
 }
 
 .team-item {
     width: 270px;
-    height: 368px;
+    /* height: 428px; */
     left: 215px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--third-color);
+}
+/* ===TEAM ICONS=== */
+.team-media-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 206px;
+    height: 56px;
+    margin: 0 30px;
+    padding-bottom: 30px;
+
+}
+
+.team-media-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height:44px;
+    border-radius: 50%;
+    background-color:var(--third-color);
+    fill: var(--icon-color);
+}
+
+.team-media-link:hover,
+.team-media-link:focus {
+background-color: var(--fourth-color);
+fill: var(--third-color)
+}
+
+.team-media-svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.container .clients {
+    display: flex;
+    justify-content: center;
+
+}
+.clients-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  
+
+}
+.clients-list-icon {
+    list-style: none;
+ 
+}
+.clients-list-link:hover,
+.clients-list-link:focus {
+border-color: var(--fourth-color);
+fill: var(--fourth-color);
+}
+.clients-list-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid var(--icon-color);
+    background-color:var(--third-color);
+    fill: var(--icon-color);
+
+}
+.clients-icon-svg{
+    width: 106px;
+    height: 60px;
 }
 
 
@@ -359,9 +457,8 @@ img {
     background-color: var(--sixth-color);
     color: var(--third-color);
     height: 252px;
-    align-items: center;
     padding: 60px 0px;
-    display: flex;
+
 }
 
 .footer-logo {
@@ -409,6 +506,59 @@ img {
 .footer-contacts:hover,
 .footer-contacts:focus {
     color: var(--fourth-color)
+}
+/*===FOOTER ICONS===*/
+footer>.container {
+    display: flex;
+    justify-content:left;
+    align-items: baseline;
+    padding-top: 0px;
+}
+.join {
+    margin-left: 70px;
+    margin-top: 0;
+}
+.join-header {
+    text-align: left;
+    font-weight: 700;
+    size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    color:var(--eighth-color);
+    text-transform: uppercase;
+}
+.join-media-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 206px;
+    height: 44px;
+   gap: 10px;
+   padding-top: 20px;
+   
+
+}
+
+.join-media-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height:44px;
+    border-radius: 50%;
+    background-color:rgba(255, 255, 255, 0.1);
+    fill: var(--third-color);
+}
+
+.join-media-link:hover,
+.join-media-link:focus {
+background-color: var(--fourth-color);
+fill: var(--third-color)
+}
+
+.join-media-svg {
+    width: 20px;
+    height: 20px;
 }
 
 /*=== END FOOTER===*/
