@@ -139,6 +139,7 @@ img {
     line-height: 1.142;
     color: var(--secondary-color);
     text-decoration: none;
+    fill: var(--secondary-color);
 }
 
 .contact-item:not(:last-child) {
