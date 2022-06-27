@@ -566,16 +566,25 @@ footer > .container {
 .table-list-flex {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content:space-between;
+  align-items: flex-start;
   list-style: none;
 }
 
-.card:not(:nth-child(3n)) {
-  margin-right: 30px;
+.card:nth-child(-n + 6) {
+  margin-bottom: 30px;
+} 
+
+.card{
+  display: block;
 }
 
-.card {
-  display: block;
+.table-item:hover,
+.table-item:focus{
+background: var(--third-color);
+border: 1px  solid var(--eighth-color);
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+cursor: pointer;
 }
 
 .card-description {
@@ -584,9 +593,7 @@ footer > .container {
   border-top: none;
 }
 
-.card:nth-child(-n + 6) {
-  margin-bottom: 30px;
-}
+
 
 .table-title {
   font-weight: 700;
